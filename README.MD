@@ -84,7 +84,7 @@
 
 6. Como rodar o programa.
 
-    Durante a implementação foi usado o software POSTMAN para possibilitar a manipulação das requisições.
+    Durante a implementação, foi utilizada a plataforma POSTMAN para possibilitar a manipulação das requisições.
 
     Para ter acesso a rotas de requisição é necessário passar o token recebido durante o Login.
 
@@ -93,18 +93,20 @@
     Exemplo:
     
     Utilizar a rota PATCH /api/service-order/:id com os parâmetros abaixo no *BODY* da requisição irá editar a ordem referente ao id passado na URL: 
-    {
-        "user": {
-            "_id": "***********",
-            "name": "********",
-            "email": "****************",
-            "zipcode": 000000,
-            "city": "******",
-            "phone": 000,
-            "__v": 0
-        },
-        "typeOfOrder": "(exemplo)",
-        "date": "00/00/0000"
-    }
+    
+    1.
+        {
+            "user": {
+                "_id": "***********",
+                "name": "********",
+                "email": "****************",
+                "zipcode": 000000,
+                "city": "******",
+                "phone": 000,
+                "__v": 0
+            },
+            "typeOfOrder": "(exemplo)",
+            "date": "00/00/0000"
+        }
 
     

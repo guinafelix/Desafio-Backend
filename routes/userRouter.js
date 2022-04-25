@@ -1,3 +1,4 @@
+require('dotenv').config();
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -117,7 +118,7 @@ router.post('/signin', async (req, res) => {
 
     try {
 
-        const secret = process.env.secret;
+        const secret = process.env.SECRET;
 
         const token = jwt.sign(
             {
